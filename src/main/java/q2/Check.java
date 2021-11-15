@@ -1,5 +1,8 @@
 package q2;
+
+import java.util.function.Function;
+
 @FunctionalInterface
 public interface Check {
-    boolean check(String value);
+    Function<String, Boolean> check();
 }
